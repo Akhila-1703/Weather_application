@@ -25,14 +25,14 @@ It displays temperature, humidity, and wind speed for a user-input city and stor
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/Akhila-1703/Weather_application.git
 cd Weather_application
+
 2. Install Dependencies
 Install the required Python package using pip:
 
-bash
 pip install requests
+
 3. Generate OpenWeatherMap API Key
 Go to OpenWeatherMap Sign Up and create a free account.
 
