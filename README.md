@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Weather App
 
 ## Description
@@ -30,3 +31,6 @@ A simple Python application to fetch and display real-time weather data using Op
 - GUI using Tkinter
 - Pandas reports
 - Logging to file
+=======
+# Weather_application
+>>>>>>> f04dc9ea3b9de5a3668fcdadaf2800caf75c4abe
