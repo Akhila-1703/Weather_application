@@ -13,8 +13,14 @@ def get_weather(city):
         print("Status code:", response.status_code)
         print("Response text:", response.text)
 
+        # Add your error handling here:
+        if response.status_code != 200:
+            print("Error: City not found or API issue. Please check your input and API key.")
+            return
+        
         data = response.json()
-        if response.ok and "main" in data:
+
+        if "main" in data:
             temperature = data["main"]["temp"]
             humidity = data["main"]["humidity"]
             wind_speed = data["wind"]["speed"]
@@ -27,6 +33,7 @@ def get_weather(city):
             print("City not found. Please check the name and try again.")
     except Exception as e:
         print(f"An error occurred: {e}")
+
 
 
 if __name__ == "__main__":
